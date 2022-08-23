@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="InternslandCourse/InternslandCourse/navbar.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="./bootstrap5/bootstrap5/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="img-fluid"
+                    src="InternslandCourse/InternslandCourse/image/internslandlogo.png" alt="" class="image-set"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">All Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us page/about us page/about1.html" target="_blank">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bootstrap5/bootstrap5/contactus.html" target="_blank">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Register/Login
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Student Registration</a></li>
+                            <li><a class="dropdown-item" href="#">Student Login</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary" id="nav-btn">START LEARNING</button>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------------------------------------------LOGIN FORM--------------------------------------------------------------------------------->
+    
+               
+   
+<div class="container d-flex flex-column justify-content-center  offset-lg-4">
+ <p class="fs-2 offset-3">Welcome Back!</p>
+    <form class="mb-5 offset-1 mt-4 text-nowrap" form action="" onsubmit="return validateForm() ">
+        <div class="mb-3 col-3  ">
+          <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+          <input type="email" id="email" placeholder="Username or email" class="form-control type"  aria-describedby="emailHelp">
+          <p class="fs-5 offset-2 text-danger" id="error"></p>
+        </div>
+        <div class="mb-3 col-3">
+          <!-- <label for="exampleInputPassword1" class="form-label ">Password</label> -->
+          <input type="password" id="password" placeholder="Password" class="form-control type" >
+          <p class="fs-5 offset-2 text-danger" id="passerror"></p>
+        </div>
+        <br>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Keep me Signed in <span class="offset-7 "><a class="button" href="#">Forget Password? </a></span></label>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3 ms-4 fs-5 w-75">Log in</button>
+      </form>
+      <p class="fs-5 offset-2">Don't have an Account? <span class=""><a class="button" href="#">Register Now </a></span></p>
+    </div>
+
+<script>
+  
+  let email = document.getElementById("email");
+let password = document.getElementById("password");
+let flag = 1;
+
+function validateForm()
+{
+  if(email.value =="")
+  {
+    document.getElementById("error").innerHTML ="User Name is invalid";
+    flag =0;
+  }
+  else
+  {
+    document.getElementById("error").innerHTML ="";
+    flag = 1;
+  }
+
+
+  if(password.value =="")
+  {
+    document.getElementById("passerror").innerHTML ="Blank must be filled";
+    flag =0;
+  }
+  else if(password.value.length <8)
+  {
+    document.getElementById("passerror").innerHTML = "Password requires atleast 8 characters";
+    flag =0;
+  }
+  else
+  {
+    document.getElementById("passerror").innerHTML ="";
+    flag = 1;
+  }
+    if(flag)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+}
+
+</script>
+
+       <div class="text-center community ">
+        <h1>Join Our Community</h1>
+        <p>Enter your email address to register to our newsletter subscription delivered on regular basis!</p>
+        <input style="width: 18rem;" type="email" class="form-control  mail " id="exampleInputEmail1"
+          aria-describedby="emailHelp" placeholder="Enter your email">
+        <button type="submit" class="btn mt-4">Subscribe</button>
+      </div>
+
+<!---------------------------------------------------FOOTER--------------------------------------------------------------->
+      <!-- <div class="container-xxl">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-2">
+            <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+              </svg>
+            </a>
+            <a class="navbar-brand" href="#"><img class="img-fluid"
+              src="../../InternslandCourse/InternslandCourse/image/internslandlogo.png" alt="" class="image-set"></a>
+            <p class="text-dark text-nowrap mt-5">InternsLand is a platform where students find meaningful Internships with
+              <br>organizations of all scales.
+            </p>
+            <a href="https://www.facebook.com/internsland" target="_blank"> <i
+                class="bi bi-facebook text-dark fs-5 ms-3"></i> </a>
+            <a href="https://www.instagram.com/internsland/" target="_blank"> <i
+                class="bi bi-instagram text-dark fs-5 ms-3"></i></a>
+            <a href=""> <i class="bi bi-twitter text-dark fs-5 ms-3"></i></a>
+            <a href="https://www.linkedin.com/company/internsland/mycompany/" target="_blank"> <i
+                class="bi bi-linkedin text-dark fs-5 ms-3"></i></a>
+          </div>
+    
+          <div class="col mb-3">
+    
+          </div>
+    
+    
+          <div class="col mb-3 text-dark offset-lg-1">
+            <h5>Popular Courses</h5>
+            <ul class="nav flex-column">
+    
+              <li class="nav-item fw-normal text-light mb-2"><a href="#" class="nav-link p-0 text-dark">C Programming </a>
+              </li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">C++ Programming</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">CORE JAVA</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">PYTHON </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"> ADVANCED PYTHON </a></li>
+    
+    
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">GSAP </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">DIGITAL MARKETING </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">GRAPHIC DESIGNING </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FRONTEND DEVELOPMENT </a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark">FULLSTACK DEVELOPMENT </a></li>
+            </ul>
+          </div>
+    
+          <div class="col mb-3 text-dark">
+            <h5>Contact Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"><i
+                    class="bi bi-house-heart-fill text-dark fs-4 text-warning"></i> &nbsp; Besides Chetan Medicos, Shreynagar New Usmanpura,
+                  Aurangabad</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"> <i class="bi bi-phone-fill text-dark fs-4 text-warning"></i>
+                  &nbsp; +91 95455185083</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-dark"> <i class="bi bi-phone-fill text-dark fs-4 text-warning"></i>
+                  &nbsp; +91 8421538753</a></li>
+              <li class="nav-item mb-2 text-nowrap"><a href="#" class="nav-link p-0 text-dark"><i class="bi bi-envelope-check-fill text-dark fs-4 text-warning"></i>
+                  &nbsp; internslandofficial@gmail.com</a></li>
+              <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li> -->
+            </ul>
+          </div>
+        </footer>
+      </div>
+           -->
+ 
+</body>
+
+</html>

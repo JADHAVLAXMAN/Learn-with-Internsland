@@ -1,0 +1,27 @@
+body{
+    background-color: #e2e5e7;
+}
+.container
+{
+    height:33rem;
+    width:35rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+}
+.type 
+{
+    width: 27rem;
+    height: 3rem;
+}
+.pswrd
+{
+    width: 27rem;
+    height: 3rem;
+}
+.button{
+    text-decoration: none;
+    color:#00A6D4;
+}
+.community{
+    margin-top:15vh;
+}

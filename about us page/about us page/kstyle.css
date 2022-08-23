@@ -1,0 +1,48 @@
+/* .rightside{
+    background-color: white;
+    color: #211f1f;
+    box-shadow: 1px 10px 10px 10px rgb(199, 202, 202);
+    height: 700px;
+    width: 600px;
+    font-size: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 500px;
+    margin-top: -350px;
+    } */
+    #blue{
+        background-color:#007991;
+        height: 250px;
+        radius: 10px;
+    }
+    
+    .navbar{
+        /* background-color: #007991; */
+    }
+    .navbar navbar-expand-lg {
+        background-color: #007991; 
+    }
+    .img1{
+        height: 6.2rem;
+         width: 10.5rem;
+    }
+    .nav-item{
+        color: aliceblue;
+    }
+    .text-lg-start{
+        color: orange;
+       
+    }
+    .contact{
+        margin-top: 8rem;
+    }
+    /* .navbar{
+        /* background-color: rgb(31,135,156,0.4); */
+        /* border-bottom-right-radius: 100px; */
+        /* height: 250px; */
+        /* background-image: url(contact.png ); */
+        /* background-image: linear-gradient(rgb(31,135,156,0.8),rgb(31,135,156,0.8)), url(contact.png); */
+        /* background-size: 100% 100%; */
+        /* width: 1400px; */
+        /* background-color: rgba(31,135,156); */
+    /* } */

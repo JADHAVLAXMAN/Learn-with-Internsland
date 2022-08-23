@@ -1,0 +1,56 @@
+
+    .rightside{
+        margin-top: 5rem;
+        background-color: white;
+        color: #211f1f;
+        box-shadow: 1px 10px 10px 10px rgb(199, 202, 202);
+    }
+    #blue{
+        background-color:#007991;
+        height: 250px;
+        radius: 10px;
+    }
+    
+    .navbar{
+        /* background-color: #007991; */
+    }
+    .navbar navbar-expand-lg {
+        background-color: #007991; 
+    }
+    .img1{
+        height: 6.2rem;
+         width: 10.5rem;
+    }
+    .nav-item{
+        color: aliceblue;
+    }
+    .text-lg-start{
+        color: orange;
+       
+    }
+    .contact{
+        margin-top: 12rem;
+        color:rgb(255,130,53);
+    }
+    #submitButton{
+        background-color:rgb(255,130,53);
+        border-color: rgb(255,130,53);
+        color: aliceblue;
+    }
+    #nav-btn{
+      background-color:rgb(255,130,53);
+      border-color: rgb(255,130,53);
+      color: aliceblue;
+
+    }
+    .btn{
+        background-color:rgb(255,130,53);
+        border-color: rgb(255,130,53);
+        color: aliceblue;  
+    }
+    
+.mail{
+ display: block;
+ margin: auto;
+}
+   

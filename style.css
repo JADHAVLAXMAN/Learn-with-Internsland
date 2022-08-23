@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap'); */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+
+} */
+/* body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+} */
+::-webkit-scrollbar{
+  display:none;
+}
+/* .main {
+  height: 100vh;
+  display: flex;
+} */
+
+
+
+.img1 {
+  position: relative;
+  margin-left: 0px;
+  width: 1380px;
+  height: 700px;
+  /* margin-top: 51px; */
+  filter: blur(4px);
+backdrop-filter: blur(4px);
+}
+/*******************************main image***************************************/
+.para1 {
+  position: absolute;
+  margin-top: -550px;
+  margin-left: 200px;
+  font-size: 18px;
+  color: rgb(190, 243, 214);
+  letter-spacing: 4px;
+  font-weight: 500;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+}
+.slideh1
+{
+  position: absolute;
+  margin-top:-500px;
+  margin-left: 190px;
+  font-size: 70px;
+  letter-spacing: 4px;
+  font-family: 'Kanit', sans-serif;
+  color: rgb(190, 243, 214);
+}
+.slider_heading
+{
+  position: absolute;
+  margin-top:-300px;
+  margin-left: 190px;
+  /* font-size: 70px; */
+  /* letter-spacing: 4px; */
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:bolder;
+  color: rgb(190, 243, 214);
+}
+.slide_span
+{
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+  letter-spacing: 1px;
+}
+.slide_btn
+{
+  position: absolute;
+  z-index:111;
+  top: 510px;
+  left:300px;
+  width: 200px;
+  height:50px;
+  font-size: 20px;
+  font-weight: 650;
+  color:rgb(12, 3, 95);
+  /* font-family: 'Edu NSW ACT Foundation', cursive; */
+  box-shadow: 15px 10px 18px #888888;
+
+  border-radius: 50px;
+  background: rgb(238, 224, 23);
+background: radial-gradient( rgb(219, 223, 3) 35%, rgb(245, 230, 18) 100%);
+  }
+/*****************************2nd Slide******************************************/
+  .para2 {
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 200px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(17, 17, 16);
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+  }
+  /* .img_bg
+  {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background: rgba(0, 0, 0, 0.46);
+filter: blur(376px);
+  } */
+  .slideh2
+  {
+    position: absolute;
+    margin-top:-500px;
+    margin-left: 190px;
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(2, 44, 20);
+  }
+  .slider_heading2
+  {
+    position: absolute;
+    margin-top:-300px;
+    margin-left: 190px;
+    /* font-size: 70px; */
+    /* letter-spacing: 4px; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:bolder;
+    color: rgb(17, 17, 1);
+  }
+  .slide_span2
+  {
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    letter-spacing: 1px;
+  }

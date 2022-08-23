@@ -1,0 +1,363 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+} */
+.image-set{
+    /* width: 60px; */
+    /* height: 50px; */
+    margin-left: 50px;
+
+}
+
+a.nav-link{
+    color:#ff9635;
+    font-size: 16px;
+    font-weight: 550;
+    font-family: sans-serif ;
+    cursor: pointer;
+
+}
+a.nav-link{
+    margin-top:5px;
+}
+li.nav-item{
+    justify-content: center;
+}
+a.nav-link:hover{
+    color:#187991;
+}
+a.dropdown-item{
+    color: #ff9635;
+}
+a.dropdown-item:hover{
+    color:#187991;
+}
+button.btn.btn-primary{
+    border-radius: 25px;
+    background-color: #FF9635;
+    border: none;
+    margin-left: 20px;
+    font-size: 15px;
+    width: 180px;
+    height: 45px;
+}
+button.btn.btn-primary:hover{
+    background-color:#187991 ;
+}
+/* .dropdown-menu.show {
+    display: block;
+    width: 200px;
+} */
+.background-image{
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 150px 0px;
+    height: 400px;
+    background-image: url("image/backgroundimage.jpg");
+    position: relative;
+}
+.bgtext{
+    position: absolute;
+    top:200px;
+    left: 50px;
+    color: white;
+}
+.row{
+    height: 200px;
+    position: relative;
+    left: 50px;
+    right: 50px;
+}
+.heading{
+    position: relative;
+    top:60px;
+    color: #FF6200;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon-image{
+    position: relative;
+    top: 80px;
+    width:50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.col{
+    text-align: left;
+    width:150px;
+    
+}
+.col-8{
+    text-align: center;
+}
+.second-heading{
+    font-weight: 600;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.second-container{
+    margin-top: 100px;
+}
+.second-container-first-row{
+    height: 90px;
+}
+.second-container-first-col{
+    border-right:2px solid #FF6200;
+}
+.second-section-background{
+    margin-top: 70px;
+    height: 350px;
+    background-image: url("image/laptop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.transpernt-box{
+    background-color: #036277;
+    opacity: 0.95;
+    height: 350px;
+    width:100%; 
+}
+.third-container{
+    position: relative;
+    top: 50px;
+    color: white;
+    height: 350px;
+}
+
+.bar-image{
+    width: 100px;
+    height: 3px;
+    /* margin-left: -8px; */
+    position: relative;
+    left: 5px;
+    top: 15px;
+}
+.internal-bar{
+    height: 30px;
+    position: relative;
+    left: 2px;
+}
+.internal-heading{
+    height: 50px;
+    position: relative;
+    left: 2px;
+    top: 25px;
+}
+.internal-text{
+    height: 80px;
+    position: relative;
+    left: 2px;
+    top: 40px;
+}
+.third-container-h6{
+    width: 20px;
+    line-height: 30px;
+}
+.parallelogram {
+    z-index: 10;
+    display: inline-block;
+    width: 12px;
+	height: 10px;
+	transform: skew(-40deg);
+	background: #FF6200;
+    margin-right: 5px;
+}
+.card-title{
+    color: black;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    left: 15px;
+    text-align: left;
+}
+.card-text{
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    text-align: left;
+}
+.card-link{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    top: 60px;
+    left: 2px;
+    display: inline-block;
+    text-align: left;
+}
+.card-link:hover{
+    color:#FF6200 ;
+}
+.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left:6px solid rgb(8, 8, 8);
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+  }
+  .triangle-text{
+    /* display: inline; */
+    margin-left: 10px;
+  }
+  .feature-row{
+    width:1300px; 
+    height:383px;
+  }
+  .feature-course{
+    background-color: rgb(228, 224, 224);
+    /* height: 400px; */
+  }
+  .feature-card{
+    position: relative;
+    left: 23px;
+    top: 58px;
+    
+  }
+  h4.feature-title{
+    margin-top:30px;
+    margin-bottom: 50px;
+    
+  }
+  h1.feature-subtitle{
+    margin-top: 50px;
+    margin-left:15px;
+    font-size: 40px;
+  }
+  p.feature-text{
+    font-size: 16px;
+    font-weight: 250;
+    line-height: 30px;
+  }
+  .icon-card{
+    position: relative;
+    left: 45px;
+    top: 95px;
+   width: 500px;
+  }
+  .text-muted{
+    color:black;
+  }
+
+@media screen and (max-width: 768px)  {
+    #nav-btn{
+        display: none;
+    }
+     /* .nav-item .dropdown{
+        position: relative;
+
+    }
+    .navbar-nav{
+        position: relative;
+        
+        
+        
+    }  */
+    .nav-link .dropdown-toggle .show{
+        position: absolute;
+        right:2px;
+
+    }
+    .second-section-background{
+        height:1120px;
+    }
+    .transpernt-box{
+        height: 1120px;
+    }
+    .third-container-row{
+        height: 680px;
+        gap: 4;
+    }
+    .feature-course{
+        height: 800px;
+    }
+   .second-container-first-row{
+    height: 400px;
+    }
+    
+    .feature-card{
+        position: relative;
+        left: -40px;
+        top: 58px;
+        width:320px;
+        height: 200px;
+      }
+    .icon-card{
+        position: relative;
+        left: -30px;
+        top: 95px;
+       width: 300px;
+      }
+      .third-container-col{
+        height: 250px;
+      }
+      .second-container-card{
+        margin-right: 10px;
+      }
+      
+      .technology-row{
+        height: 400px;
+      }
+      .sec-cont-col-w{
+        width: 100px;
+      }
+      p.feature-text{
+        width: 300px;
+      }
+    }
+@media screen and (max-width: 350px) {
+    .container.text-center .second-container{
+        position: relative;
+        top:140px;
+    }
+    .second-section-background{
+        height:1120px;
+    }
+    .transpernt-box{
+        height: 1120px;
+    }
+    .third-container-row{
+        height: 680px;
+        gap: 4;
+    }
+    .feature-course{
+        height: 800px;
+    }
+    .second-container-first-row{
+        height: 400px;
+    }
+    .feature-card{
+        position: relative;
+        left: -40px;
+        top: 58px;
+        width:200px;
+        height:200px ;
+      }
+    .icon-card{
+        position: relative;
+        left: -30px;
+        top: 95px;
+       width: 300px;
+      }
+      .third-container-col{
+        height: 250px;
+      }
+      .second-container-card{
+        margin-right: 10px;
+      }
+      .technology-row{
+        height: 400px;
+      }
+      .sec-cont-col-w{
+        width: 100px;
+      }
+      p.feature-text{
+        width: 300px;
+      }
+}
